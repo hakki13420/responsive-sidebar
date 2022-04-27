@@ -17,7 +17,7 @@
 
 .sidebar{
     width: 250px;
-    height:100vh;
+    height:100%;
     background: var(--main-bg-color);    
     padding: 1rem;
     transition: .5s all ease;
@@ -63,17 +63,24 @@
     align-items: center;
     padding: 2rem 1rem;
 }
-.bottom-sidebar i{
-    font-size: 1.1rem;
-    color: #FFF100;
-    font-size: 2rem;
-    transition: .4s all ease;
+.mode{    
     cursor: pointer;
+    width: 30px;    
+    height: 30px;
+    border-radius: 5px;
 }
-.bottom-sidebar i:hover{    
-    color: #FFF;
+.mode1{    
+    background: #00f;
 }
-
+.mode2{    
+    background: #F00;
+}
+.mode3{    
+    background: #000;
+}
+.mode4{    
+    background: #FFF;
+}
 
 /*=====================media queries==============*/
 @media screen and (max-width:600px) {
