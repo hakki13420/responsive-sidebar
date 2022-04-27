@@ -17,6 +17,7 @@
 
 .sidebar{
     width: 250px;
+    min-height: 100vh;
     height:100%;
     background: var(--main-bg-color);    
     padding: 1rem;
@@ -80,6 +81,45 @@
 }
 .mode4{    
     background: #FFF;
+}
+.cookies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(246, 82, 82);
+    opacity: .6;
+    text-align: center;
+    color: #FFF;
+    display: none;
+    position: absolute;
+    bottom: -40px;
+    transition: .5s all ease;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    animation: cook 2s;
+    z-index: 10;
+}
+.cookies button{
+    background: #00f;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 3px 10px;
+    outline: #422422;
+    transition:.4s all ease
+}
+.cookies button:hover{
+    background: #FFF;
+    color: #00f;
+}
+@keyframes cook {
+    0%{
+        bottom:-40px;
+    }
+    100%{
+        bottom:0
+    }
 }
 
 /*=====================media queries==============*/
